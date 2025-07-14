@@ -10,6 +10,7 @@ It aims at understanding inverse problems and learning how to solve them, coveri
 - the minimum-norm solution
 - singular value decomposition (SVD) and the truncated SVD inverse
 - regularization methods like smoothness constraints
+- resolution analysis
 - non-linear problems using gradient and Gauss-Newton methods
 - introduction to probabilistic methods and global minimization
 using
