@@ -7,8 +7,9 @@ from pygimli.physics.ves import VESModelling
 
 
 def showPhiD(x, y, mat, xlabel=r"$\rho_2$ ($\Omega$m)", ylabel=r"$d_2$ (m)",
-            vmin=1, vmax=4, orientation="vertical"):
-    fig, ax = plt.subplots()
+             vmin=1, vmax=4, orientation="vertical", ax=None):
+    if ax is None:
+        fig, ax = plt.subplots()
     im = ax.matshow(mat, cmap="Spectral_r", vmin=vmin, vmax=vmax)
     # im = ax.matshow(np.log10(mat), cmap="Spectral_r", vmin=1.5, vmax=4.5)
     xt = np.arange(0, len(x), 5)
